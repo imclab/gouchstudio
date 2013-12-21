@@ -1,0 +1,52 @@
+.myPlayer {
+	height: 50px;
+}
+
+.myPlayer audio {
+	display: none;
+}
+
+/* Controls */
+.myPlayer .command {
+	padding: 5px;
+	width: 10%;
+	cursor:pointer;
+}
+.myPlayer .command:hover {
+	opacity: 0.5;
+}
+.myPlayer .timeLeft {
+  	font-family: 'Chelsea Market';
+	display: inline-block;
+	padding: 3px;
+	color: #bbb;
+}
+
+/* Progress bar */
+.myPlayer .progressBar {
+	display: inline-block;
+	height: 30px;
+	width: 50%;
+	margin: 5px;
+	margin-top: 10px;
+	background-color:#ddd;
+	cursor:pointer;
+	border-radius:3px;border:1px solid #111;
+}
+.myPlayer .songName{z-index: 20;color:#333;font-size: 0.8em;}
+.myPlayer .progress{width: 0px;height:23px;background-color: #94C0D2;cursor: pointer;border-radius:2px 0px 0px 2px;
+position: relative;top: -22px;left: -3px;z-index: 10;
+background: -moz-linear-gradient(-45deg, #ddd 0%, #94C0D2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ddd), color-stop(100%,#94C0D2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* IE10+ */
+background: linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* W3C */}
+.myPlayer .loadingBar{width: 0px;height:23px;background-color: #DAECF4;cursor: pointer;
+border-radius:2px 0px 0px 2px;position: relative;top: -63px;left: -3px;z-index: 0;
+background: -moz-linear-gradient(-45deg, #ddd 0%, #DAECF4 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ddd), color-stop(100%,#DAECF4)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* IE10+ */
+background: linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* W3C */}
