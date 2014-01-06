@@ -1,4 +1,4 @@
 gouchstudio.com
 ===============
 
-Webapp for my home recording studio
+Web-app for my home recording studio

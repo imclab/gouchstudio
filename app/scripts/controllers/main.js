@@ -19,7 +19,7 @@ angular.module('gouchstudioApp')
   		{ title: "A prelude to Horror", genres: [4, 2, 6], author: 0 },
 	    { title: "Pickman's Model", genres: [4, 2, 6], author: 0 },
 	    { title: "Flesh Theory Part I - From The Dark", genres: [4, 2, 6], author: 0 },
-	    { title: "He who commands the Seas", genres: [4, 2, 6], author: 0 },
+	    { title: "He who commands at the Seas", genres: [4, 2, 6], author: 0 },
 	    { title: "One Step Beyond", genres: [4, 2, 6], author: 0 },
 	    { title: "Creators (of all Things)", genres: [4, 2, 6], author: 0 },
 	    { title: "A Night in Tristram", genres: [4, 2, 6], author: 0 },
@@ -54,5 +54,29 @@ angular.module('gouchstudioApp')
 		'bands' : $scope.bands,
 		'folder': 'music'
 	});
+
+	$scope.addSongToPlaylist = function (index) {
+		$('#myPlayer').myPlayer.addSongsToPlaylist([index]);
+	};
+
+	$scope.addAuthorToPlaylist = function (authorId) {
+		var songs = [];
+		for (var i in $scope.songs) {
+			if ($scope.songs[i].author === authorId) {
+				songs.push(i);
+			}
+		}
+		$('#myPlayer').myPlayer.addSongsToPlaylist(songs);
+	};
+
+	$scope.addGenreToPlaylist = function (genreId) {
+		var songs = [];
+		for (var i in $scope.songs) {
+			if ($scope.songs[i].genres.indexOf(genreId) >= 0) {
+				songs.push(i);
+			}
+		}
+		$('#myPlayer').myPlayer.addSongsToPlaylist(songs);
+	};
 
   });

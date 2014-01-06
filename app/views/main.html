@@ -1,16 +1,17 @@
 <div class="header">
   <img class="pull-left" src="../images/audio_peak.png" alt="audio peak"/>
-  <h3>Gouch' Studio <br><small>great recordings for great bands</small></h3>
+  <h3>Gouch' Studio</h3>
+  <h5>great recordings for great bands</h5>
 </div>
 
 <div id="songsList">
   <div class="row" ng-repeat="song in songs">
-    <div class="col-md-3 author" style="color:{{bands[song.author].color}}">
+    <div class="col-md-3 author" style="color:{{bands[song.author].color}}" ng-click="addAuthorToPlaylist(song.author)">
       {{bands[song.author].name}}
     </div>
-    <div class="col-md-6 songTitle">{{song.title}}</div>
+    <div class="col-md-6 songTitle" ng-click="addSongToPlaylist($index)">{{song.title}}</div>
     <div class="col-md-3 genres">
-      <span class="label label-default genre" ng-repeat="genreId in song.genres" data-genreId="genreId">
+      <span class="label label-default genre" ng-repeat="genreId in song.genres" ng-click="addGenreToPlaylist(genreId)">
         {{genres[genreId]}}
       </span>
     </div>
@@ -19,19 +20,21 @@
 
 <div id="myPlayer" class="jumbotron">
     <audio controls="" preload=""></audio>
-    <div id="songName">Play Songs</div>
-    <img id="songImage" src="../images/vinyl.png" alt="song image"/>
+    <div id="songName" class="easeTransition">Play Songs</div>
+    <img id="songImage" class="easeTransition" src="../images/vinyl.png" alt="song image"/>
     <div id="playerControls">
       <div class="command prevSong glyphicon glyphicon-step-backward"></div>
       <div class="command playPause glyphicon glyphicon-play"></div>
-      <div class="progressBar">
-        <div class="progress"></div>
-        <div class="loadingBar"></div>
+      <div class="progressLayout">
+        <div class="progressBar"></div>
+        <div class="loadingBar hide"></div>
       </div>
-      <span class="timeLeft">0:00</span>
+      <span class="timeLeft easeTransition">0:00</span>
       <div class="command nextSong glyphicon glyphicon-step-forward"></div>
+      <div class="command toggleRandom glyphicon glyphicon-random active" title="Shuffle"></div>
     </div>
-    <div id="playerHistory"></div>
+    <div id="showPlaylistButton" class="command glyphicon glyphicon-music easeTransition" title="Show playlist"></div>
+    <div id="playlist" class="easeTransition"></div>
 </div>
 
 <div class="footer">

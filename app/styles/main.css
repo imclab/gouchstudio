@@ -13,25 +13,28 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
-}
 .header img {
   margin-right: 10px;
 }
-/* Make the masthead heading the same height as the navigation */
+.header {
+  padding-bottom: 15px;
+}
 .header h3 {
-  color: #ddd;
   font-family: 'Chelsea Market';
+  color: #ddd;
   font-size: 2.2em;
+  line-height: 30px;
+  text-shadow: 2px 2px 2px #000;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 30px;
-  padding-bottom: 19px;
-  text-shadow: 2px 2px 2px #000;
+  padding-bottom: 5px;
 }
-.header small {
-  font-size: 0.6em;
+.header h5 {
+  font-family: 'Chelsea Market';
+  text-shadow: 2px 2px 2px #000;
+  font-size: 1.3em;
+  color: #aaa;
+  display: inline;
 }
 
 .label-default {
@@ -79,7 +82,7 @@ body {
 /* Custom page footer */
 .footer {
   font-family: 'Chelsea Market';
-  margin: 20px 0px 130px 0px;
+  margin: 20px 0px 120px 0px;
   color: #777;
   text-align: right;
   text-shadow: 2px 2px 2px #000;
