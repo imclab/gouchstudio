@@ -80,10 +80,11 @@
             var random;
             do {
                 random =  Math.floor(Math.random() * (inAllSongs ? parameters.songs.length : playlist.length));
-            } while (inAllSongs && parameters.songs[random] === currentSongPlaying 
-                || !inAllSongs && playlist[random] === currentSongPlaying 
-                || inAllSongs && parameters.songs.length == 1 
-                || !inAllSongs && playlist.length == 1);
+                if (inAllSongs && parameters.songs.length == 1 || !inAllSongs && playlist.length == 1) {
+                    return random;
+                }
+            } while (inAllSongs && parameters.songs[random] == currentSongPlaying
+                || !inAllSongs && playlist[random] == currentSongPlaying);
             return random;
         };
 

@@ -45,6 +45,7 @@ angular.module('gouchstudioApp')
 	    { title: "Over the Hills", genres: [9], author: 3 },
 	    { title: "The March of Evil (introduction)", genres: [7, 4, 3], author: 3 },
 	    { title: "Lust in Hell", genres: [4, 3], author: 3 },
+	    { title: "Warlords Online - Main Theme", genres: [7, 6, 9], author: 3 },
 	    { title: "Dungeon Quest - Main Theme", genres: [7, 6, 9], author: 3 },
 	    { title: "French Fries never die", genres: [7, 6, 9], author: 3 }
     ];
