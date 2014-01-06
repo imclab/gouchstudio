@@ -1,52 +1,115 @@
-.myPlayer {
-	height: 50px;
+#myPlayer {
+	height: 90px;
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.92;
+	padding: 10px 0px 0px 0px;
+	margin-bottom: 0px;
+	border-radius: 0px;
 }
 
-.myPlayer audio {
+#myPlayer audio {
 	display: none;
 }
 
-/* Controls */
-.myPlayer .command {
-	padding: 5px;
-	width: 10%;
-	cursor:pointer;
+#myPlayer #songImage {
+	position: fixed;
+	left: 10px;
+	bottom: 9px;
+	opacity: 0.6;
 }
-.myPlayer .command:hover {
+
+#myPlayer #songName{
+	position: fixed;
+	left: 95px;
+	bottom: 45px;
+	font-family: 'Chelsea Market';
+	color:#ccc;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+#myPlayer #playerControls {
+	position: fixed;
+	left: 54px;
+	bottom: 5px;
+	width: 300px;
+}
+
+#myPlayer #playerHistory {
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	width: 100px;
+}
+
+/* Controls */
+#myPlayer .command {
+	display: inline-block;
+	padding: 5px;
+	width: 30px;
+	cursor:pointer;
+	text-align: center;
+	color: #bbb;
+}
+#myPlayer .command:hover {
 	opacity: 0.5;
 }
-.myPlayer .timeLeft {
+
+#myPlayer .timeLeft {
   	font-family: 'Chelsea Market';
 	display: inline-block;
-	padding: 3px;
-	color: #bbb;
+	color: #ccc;
+	font-size: 0.65em;
+	vertical-align: top;
+	margin-top: 5px;
+	width: 40px;
+	text-align: left;
 }
 
 /* Progress bar */
-.myPlayer .progressBar {
+#myPlayer .progressBar {
 	display: inline-block;
 	height: 30px;
-	width: 50%;
-	margin: 5px;
-	margin-top: 10px;
+	width: 26%;
+	margin: 6px 5px 0px 2px;
 	background-color:#ddd;
 	cursor:pointer;
-	border-radius:3px;border:1px solid #111;
+	border-radius:5px;
+	border:1px solid #111;
+	vertical-align: top;
 }
-.myPlayer .songName{z-index: 20;color:#333;font-size: 0.8em;}
-.myPlayer .progress{width: 0px;height:23px;background-color: #94C0D2;cursor: pointer;border-radius:2px 0px 0px 2px;
-position: relative;top: -22px;left: -3px;z-index: 10;
-background: -moz-linear-gradient(-45deg, #ddd 0%, #94C0D2 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ddd), color-stop(100%,#94C0D2)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* IE10+ */
-background: linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* W3C */}
-.myPlayer .loadingBar{width: 0px;height:23px;background-color: #DAECF4;cursor: pointer;
-border-radius:2px 0px 0px 2px;position: relative;top: -63px;left: -3px;z-index: 0;
-background: -moz-linear-gradient(-45deg, #ddd 0%, #DAECF4 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ddd), color-stop(100%,#DAECF4)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* IE10+ */
-background: linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* W3C */}
+
+#myPlayer .progress{
+	width:0px;
+	height:28px;
+	background-color:#94C0D2;
+	cursor:pointer;
+	border-radius:5px 0px 0px 5px;
+	z-index:10;
+	background: -moz-linear-gradient(-45deg, #ddd 0%, #94C0D2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ddd), color-stop(100%,#94C0D2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* IE10+ */
+	background: linear-gradient(-45deg, #ddd 0%,#94C0D2 100%); /* W3C */
+}
+
+#myPlayer .loadingBar{
+	width:0px;
+	height:28px;
+	background-color:#DAECF4;
+	cursor:pointer;
+	border-radius:5px 0px 0px 5px;
+	z-index:0;
+	background: -moz-linear-gradient(-45deg, #ddd 0%, #DAECF4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ddd), color-stop(100%,#DAECF4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* IE10+ */
+	background: linear-gradient(-45deg, #ddd 0%,#DAECF4 100%); /* W3C */
+}

@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^www.gouchstudio.fr/mp3$
+RewriteRule ^(.*) http://www.gouchstudio.fr/$1 [QSA,L,R=301]
