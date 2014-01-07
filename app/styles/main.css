@@ -15,8 +15,10 @@ body {
 
 .header img {
   margin-right: 10px;
+  width: 75px;
 }
 .header {
+  font-size: 0.8em;
   padding-bottom: 15px;
 }
 .header h3 {
@@ -108,5 +110,9 @@ body {
   /* Space out the masthead */
   .header {
     margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  .header img {
+    width: 150px;
   }
 }

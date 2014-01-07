@@ -35,7 +35,7 @@
 
         if (audiotag.canPlayType('audio/ogg') != '') {
             audioFilesFormat = '.ogg';
-        } else if (audiotag.canPlayType('audio/mp3') =! '') {
+        } else if (audiotag.canPlayType('audio/mp3') != '') {
             audioFilesFormat = '.mp3';
         } else {
             alert('Your browser cannot play music. Please update it for the greater good !');
