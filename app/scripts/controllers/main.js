@@ -41,7 +41,7 @@ angular.module('gouchstudioApp')
 	    { title: "Final Scene (Roches Rouges)", genres: [6], author: 3 },
 	    { title: "Credits (Roches Rouges)", genres: [6, 4], author: 3 },
 	    { title: "Somnium Aeternus", genres: [5], author: 3 },
-	    { title: "End of Agony (ft Syvain Pallas)", genres: [4, 2], author: 3 },
+	    { title: "End of Agony (ft Sylvain Pallas)", genres: [4, 2], author: 3 },
 	    { title: "Over the Hills", genres: [9], author: 3 },
 	    { title: "The March of Evil (introduction)", genres: [7, 4, 3], author: 3 },
 	    { title: "Lust in Hell", genres: [4, 3], author: 3 },

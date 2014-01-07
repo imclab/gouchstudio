@@ -12,7 +12,7 @@
     <div class="col-md-6 songTitle" ng-click="addSongToPlaylist($index)">{{song.title}}</div>
     <div class="col-md-3 genres">
       <span class="label label-default genre" ng-repeat="genreId in song.genres" ng-click="addGenreToPlaylist(genreId)">
-        {{genres[genreId]}}
+        {{genres[genreId] | lowercase}}
       </span>
     </div>
   </div>
