@@ -15,7 +15,7 @@ body {
 
 .header img {
   margin-right: 10px;
-  width: 75px;
+  width: 66px;
 }
 .header {
   font-size: 0.8em;
@@ -84,10 +84,11 @@ body {
 /* Custom page footer */
 .footer {
   font-family: 'Chelsea Market';
-  margin: 20px 0px 120px 0px;
+  margin: 20px 0px 100px 0px;
   color: #777;
   text-align: right;
   text-shadow: 2px 2px 2px #000;
+  font-size: 0.85em;
 }
 .footer a {
   margin-right: 5px;
@@ -114,5 +115,9 @@ body {
   }
   .header img {
     width: 150px;
+  }
+  .footer {
+    font-size: 1.0em;
+    margin-bottom: 110px;
   }
 }
